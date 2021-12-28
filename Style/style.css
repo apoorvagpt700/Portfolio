@@ -1,7 +1,8 @@
+/*--for whole body of website, and define colors here--*/
 :root{
-    --black-use:#1A1A1D;
+    --black-use:#000000;
     --grey-use:rgba(255,255,255,0.1);
-    --icon-color: rgba(255,255,255,.5);
+    --icon-color: white;
     --white-use:white;
     --cyan-use:#66FCF1;
     --dark-cyan-use:#45A29E;
@@ -13,6 +14,7 @@
     --dark-gray-use:#181f1f;
 }
 
+/*--define colors when you change the theme--*/
 .change-theme{
     --black-use:#Eae7dc;
     --grey-use:#d8c3a5;
@@ -28,20 +30,24 @@
     --dark-gray-use: #e8d2b3;
 }
 
+/*--use black color for whole background--*/
 #whole{
     background-color: var(--black-use);
 }
 
+/*--use black color for intro background--*/
 .intro{
-    background-color: var(--black-use);
+    background-color: #e84393;
+    background-image: linear-gradient(315deg, #e84393 0%, #000000 74%);
 }
 
+
 .navbar {
-    padding: 0 4rem 4.5rem 0;
+    padding: 0px 0px 0px 0px;
 }
 
 .nav-item {
-    padding: 0 18px;
+    padding: 0 0px;
 }
 
 .nav-link {
@@ -67,8 +73,8 @@
 .navbar img{
     position: static;
     height: 80px;
-    margin-top: 15px;
-    margin-left: 15%;
+    margin-top: 5px;
+    margin-left: 5%;
 }
 
 #theme-icon{
@@ -89,19 +95,38 @@
     color: var(--white-use);
 }
 
-#name div h4{
+div h4{
     position: relative;
-    margin-left: 10%;
-    margin-top: 5rem;
-    font-size: 5rem;
-    margin-left: 10%;
-    font-family: "Franklin Gothic Medium";
-    color: var(--white-use);
-    text-shadow: 0.05em 0 0 var(--cyan-use),
-    -0.025em -0.05em 0 var(--dark-cyan-use),
-    0.025em 0.05em 0 var(--red-use);
-    animation: glitch 500ms infinite
+    font-size: 6vw;
+    color:#000000;
+    -webkit-text-stroke: 0.3vw #000000;
+    text-transform: uppercase;
 }
+
+div h4::before
+{
+    content: attr(data-text);
+    position: absolute;
+    top:0;
+    left:0;
+    width: 0;
+    height: 100%;
+    color:#ffffff;
+    -webkit-text-stroke: 0.3vw #ffffff;
+    border-right: 2px solid #ffffff;
+    overflow: hidden;
+    animation: animates 6s linear infinite;
+}
+@keyframes animates {
+    0%, 50%, 100% {
+        width: 0;
+    }
+
+    50%, 75% {
+        width: 100%;
+    }
+}
+
 
 #intro-content{
     display: flex;
@@ -109,7 +134,7 @@
 
 #icons{
     font-size: 4rem;
-    margin-right: 20%;
+    margin-right: 0%;
     padding-left: 2rem;
     padding-top: 4rem;
 }
@@ -123,7 +148,7 @@
 }
 
 #icons div i:hover{
-    color: var(--dark-cyan-use);
+    color: var(--cyan-use);
     box-shadow: -4px 0px 0px 0px var(--cyan-use);
 }
 
@@ -142,7 +167,7 @@
     #about{
         font-size: large;
         color: var(--white-use);
-        margin-bottom: 2rem;
+        margin-bottom: 0rem;
     }
     #icons{
         font-size: 3rem;

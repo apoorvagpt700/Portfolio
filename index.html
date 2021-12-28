@@ -1,10 +1,18 @@
 <!DOCTYPE html>
+
+<!--english language-->
 <html lang="en">
+
+<!--for serachbar/html link-->
 <head>
     <meta charset="UTF-8">
-    <title>Apoorva Gupta</title>
 
+    <!--title name-->
+    <title>Apoorva Gupta</title>
+    <!--AG icon in top-->
     <link rel="icon" href="Images/ico.png">
+
+    <!--use style.css for styling head-->
     <link rel = "stylesheet" type="text/css" href="Style/style.css">
 
     <!--Boostrap And FrontEnd Awesome stylesheet-->
@@ -13,59 +21,72 @@
 </head>
 
 
+<!--whole body is defined as whole here-->
 <body id="whole">
 
     <!-- Intro Page -->
-
     <div class="container-fluid intro">
 
         <div class="navbar navbar-expand-md navbar-dark ">
 
-            <a href="#"><img id = "logo" src="Images/icon.png" title="Aditya Gupta"></a>
+            <a href="#"><img id = "logo" src="Images/icon.png" title="Apoorva Gupta"></a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarToggleDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarToggleDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
                 <ul class="navbar-nav ml-auto">
+
                     <li class="nav-item">
-                        <a href="https://mypost.netlify.app/" class="nav-link" id="blog-icon" title="My Thoughts">Blog</a>
+
+                        <!-- Adding Medium page reference -->
+                        <a href="https://medium.com/@apoorvagpt700" class="nav-link" id="blog-icon" title="My Medium Page">Medium</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link"><i id="music-icon" class="fas fa-play" title="Play Music"></i></a>
-                        <audio loop id="my-song" type="audio/mp3" src="Music/music.mp3"></audio>
+
+                        <!-- Adding Music -->
+                        <a class="nav-link"><i id="music-icon" class="fas fa-play" title="Listen to my voice"></i></a>
+                        <audio loop id="my-song" type="audio/mp3" src="Music/music.mp3"> </audio>
                     </li>
+
+                    <!-- Changing theme  -->
                     <li class="nav-item">
-                        <a class="nav-link" id="color-changer"><i id="theme-icon" title="Change Theme" class="fas fa-sun"></i></a>
+                        <a class="nav-link" id="color-changer"><i id="theme-icon" title="Change theme-color" class="fas fa-sun"></i></a>
                     </li>
+
                 </ul>
             </div>
         </div>
 
         <div id="intro-content">
             <span id="name">
-                <div>
-                    <h4 class="glitch layer" data-speed="2">
-                        <span aria-hidden="true">Apoorva<br>Gupta</span>
-                        Apoorva<br>gupta
-                        <span aria-hidden="true">Apoorva<br>Gupta</span>
-                    </h4>
-                </div>
+                <div id="apoorva">
+                    <style>
+                        h4{text-align: center;}
+                    </style>
+                    <h4 data-text="Apoorva Gupta">Apoorva Gupta </h4>
+
+                    <p style ="text-align:center;"><img src="Images/apo.png" alt="Apoorva Gupta Profile" width="300" height="300" ></p>
+                    </div>
+
                 <div id="about">
-                    <p>Hola! My name is Apoorva Gupta, and I am a Data Science Professional<br>
+                    <p>Hola! My name is Apoorva Gupta, and I am a Data Science Professional.
                         I am current graduate student at Masters in Data Science from Khoury College of Computer Sciences, Northeastern University.
-                        I have with 3+ years of data science experience in solving multiple challenging business problems and aiding organizations to take data-driven decisions.
+                        I have with 3+ years of data science experience in solving multiple challenging business problems and aiding organizations to take data driven decisions.
                         My expertise is in addressing complex business problems in predictive and inquisitive analytics domain.
                     </p>
                 </div>
             </span>
+
             <span id="icons">
-                <div><a class="no-css" href="https://github.com/aadityazz"><i class="fab fa-github" title="GitHub"></i></a></div>
-                <div><a class="no-css" href="https://www.linkedin.com/in/aditya-gupta-aa7524201/"><i class="fab fa-linkedin-in" title="LinkedIn"></i></a></div>
-                <div><a class="no-css" href="https://leetcode.com/aditya_zz/"><i class="fas fa-code" title="LeetCode"></i></a></div>
-                <div><a class="no-css" href="https://github.com/aadityazz"><i class="fas fa-file" title="Projects"></i></a></div>
+                <div><a class="no-css" href="https://github.com/apoorvagpt700"><i class="fab fa-github" title="GitHub"></i></a></div>
+                <div><a class="no-css" href="https://www.linkedin.com/in/apoorva-gupta-data-science-northeastern-university-570613127/"><i class="fab fa-linkedin-in" title="LinkedIn"></i></a></div>
+                <div><a class="no-css" href="https://leetcode.com/apoorvagpt700/"><i class="fas fa-code" title="LeetCode"></i></a></div>
+                <div><a class="no-css" href="https://www.kaggle.com/apoorva1205"><i class="fas fa-file" title="Projects"></i></a></div>
                 <div><a class="no-css" href="resume.html"><i class="far fa-address-card" title="Resume"></i></a></div>
             </span>
         </div>
@@ -99,7 +120,10 @@
     <!-- Skills Card-->
 
     <section class="skills-card">
+
         <div class="container-skill skills-display">
+
+            <!--1. Python-->
             <div class="card-skill">
                 <div class="face face1">
                     <div class="content-skills">
@@ -118,17 +142,19 @@
                     </div>
                 </div>
             </div>
+
+            <!--2. SQL-->
             <div class="card-skill">
                 <div class="face face1">
                     <div class="content-skills">
-                        <i class="fab fa-java"></i>
-                        <h3>Java</h3>
+                        <i class="fa fa-database"></i>
+                        <h3>SQL</h3>
                     </div>
                 </div>
                 <div class="face face2">
                     <div class="content">
                         <div class="skill-progress">
-                            <div class="java">
+                            <div class="sql">
                                 <div class="skill-name">
                                 </div>
                             </div>
@@ -136,35 +162,19 @@
                     </div>
                 </div>
             </div>
-            <div class="card-skill">
-                <div class="face face1">
-                    <div class="content-skills">
-                        <i class="fab fa-node-js"></i>
-                        <h3>FrontEnd</h3>
-                    </div>
-                </div>
-                <div class="face face2">
-                    <div class="content">
-                        <div class="skill-progress">
-                            <div class="FrontEnd">
-                                <div class="skill-name">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+            <!--3. Machine Learning-->
             <div class="card-skill">
                 <div class="face face1">
                     <div class="content-skills">
                         <i class="fas fa-code-branch"></i>
-                        <h3>BackEnd</h3>
+                        <h3>Machine Learning</h3>
                     </div>
                 </div>
                 <div class="face face2">
                     <div class="content">
                         <div class="skill-progress">
-                            <div class="BackEnd">
+                            <div class="Machine Learning">
                                 <div class="skill-name">
                                 </div>
                             </div>
@@ -172,17 +182,19 @@
                     </div>
                 </div>
             </div>
+
+            <!--4. Statistics-->
             <div class="card-skill">
                 <div class="face face1">
                     <div class="content-skills">
-                        <i class="fas fa-code-branch"></i>
-                        <h3>Data Structure</h3>
+                        <i class="fa fa-table"></i>
+                        <h3>Statistics</h3>
                     </div>
                 </div>
                 <div class="face face2">
                     <div class="content">
                         <div class="skill-progress">
-                            <div class="ds">
+                            <div class="Statistics">
                                 <div class="skill-name">
                                 </div>
                             </div>
@@ -190,6 +202,28 @@
                     </div>
                 </div>
             </div>
+
+            <!--5. Data Visualization-->
+            <div class="card-skill">
+                <div class="face face1">
+                    <div class="content-skills">
+                        <i class="fa fa-cubes"></i>
+                        <h3>Data Visualization</h3>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <div class="skill-progress">
+                            <div class="Data Visualization">
+                                <div class="skill-name">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--6. Algorithms-->
             <div class="card-skill">
                 <div class="face face1">
                     <div class="content-skills">
@@ -245,8 +279,8 @@
                 <div class="box-2">
                     <div class="content-2">
                         <h2>1</h2>
-                        <h3>MyPost</h3>
-                        <p>A site where I used to write something and work on backend</p>
+                        <h3>Yelp Data Analysis</h3>
+                        <p>Yelp Data Analysis</p>
                         <a href="https://mypost.netlify.app/">Visit</a>
                     </div>
                 </div>
@@ -255,8 +289,8 @@
                 <div class="box-2">
                     <div class="content-2">
                         <h2>2</h2>
-                        <h3>Non-Deployed Projects</h3>
-                        <p>I have made many projects but those aren't deployed</p>
+                        <h3>Online Book Review System</h3>
+                        <p>Online Book Review System</p>
                         <a href="https://github.com/aadityazz">Visit</a>
                     </div>
                 </div>
@@ -266,7 +300,7 @@
                     <div class="content-2">
                         <h2>3</h2>
                         <h3>Coming Soon</h3>
-                        <p>I am working on it! :)</p>
+                        <p>Under construction</p>
                         <a href="comingup.html">Visit</a>
                     </div>
                 </div>
@@ -366,9 +400,7 @@
                     <h2>Let's Talk</h2>
                     <ul class="info">
                         <li>
-                            Hey! Hope you liked the site, the site is still under development sorry for that expect it to be completed soon.
-                            Meanwhile, Want to talk? or want to deliver some message or any thing just text here and you'll get the answer soon.
-                            Thank You!
+                            Under Construction
                         </li>
                     </ul>
                 </div>
@@ -400,10 +432,10 @@
     <!-- Footer -->
 
     <section class="footer">
-        <div class="credits"> A site developed by<br><span class="closing-name">Aditya Gupta</span></div>
+        <div class="credits"> This site is developed by<br><span class="closing-name">Apoorva Gupta</span></div>
         <div class="message">
             <span class="closing-caption"><i class="far fa-closed-captioning"></i></span>
-            <span >The Site is under development</span>
+            <span >This Site is under development</span>
         </div>
     </section>
 
