@@ -41,7 +41,7 @@ body {
     animation-name: move1;
 }
 .firefly:nth-child(1)::before {
-    animation-duration: 18s;
+    animation-duration: 17s;
 }
 .firefly:nth-child(1)::after {
     animation-duration: 18s, 5297ms;
